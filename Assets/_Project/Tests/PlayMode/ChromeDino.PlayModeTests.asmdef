@@ -1,0 +1,7 @@
+{
+    "name": "ChromeDino.PlayModeTests",
+    "rootNamespace": "ChromeDino.Tests",
+    "references": ["ChromeDino.Runtime", "Unity.InputSystem", "Unity.InputSystem.TestFramework", "UnityEngine.UI", "Unity.TextMeshPro"],
+    "optionalUnityReferences": ["TestAssemblies"],
+    "autoReferenced": false
+}

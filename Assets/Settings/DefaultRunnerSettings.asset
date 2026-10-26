@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4657afa0bc89f48a7a29e6b439e8f9, type: 3}
+  m_Name: DefaultRunnerSettings
+  m_EditorClassIdentifier: ChromeDino.Runtime::ChromeDino.RunnerSettings
+  _baseSpeed: 6
+  _jumpVelocity: 10
+  _gravityScale: 3
+  _dashSpeedMultiplier: 2
+  _dashDurationSeconds: 0.2
+  _dashCooldownSeconds: 1.5
+  _difficultyScoreThreshold: 500
+  _harderSpeedMultiplier: 1.25
+  _invulnerabilitySeconds: 1
+  _hitRecoverySeconds: 0.25
+  _hitFlashSeconds: 0.15
+  _hitColor: {r: 1, g: 0.3, b: 0.3, a: 1}
+  _dashColor: {r: 0.3, g: 0.85, b: 1, a: 1}
+  _pointsPerWorldUnit: 1
+  _coinPoints: 50
+  _firstSpawnDelaySeconds: 2
+  _minimumSpawnIntervalSeconds: 1.2
+  _maximumSpawnIntervalSeconds: 2
+  _boundaryMarginWorldUnits: 2
+  _reactionSeconds: 0.6
+  _landingRecoverySeconds: 0.25
+  _minimumClearGapWorldUnits: 12
+  _maximumActiveInteractables: 16
+  _singleCoinWeight: 1
+  _coinRowWeight: 2
+  _coinArcWeight: 2
+  _repeatedJumpCoinWeight: 1
+  _coinRowSpacingWorldUnits: 1
+  _coinArcHalfDurationFraction: 0.4
+  _repeatedJumpReactionSeconds: 0.15

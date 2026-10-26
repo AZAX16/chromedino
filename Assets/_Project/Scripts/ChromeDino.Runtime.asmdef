@@ -1,0 +1,6 @@
+{
+    "name": "ChromeDino.Runtime",
+    "rootNamespace": "ChromeDino",
+    "references": ["Unity.InputSystem", "UnityEngine.UI", "Unity.TextMeshPro"],
+    "autoReferenced": true
+}
