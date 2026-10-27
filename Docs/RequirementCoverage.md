@@ -1,5 +1,7 @@
 # Requirement coverage and verification
 
+Final homework preparation, **2026-10-27**: the actual assignment PDF and supplied .gitignore have now been read from `HM1 (2).zip`. The current authored scene is configured and `Game.unity` is the enabled startup scene. Final suites passed **32/32 Edit Mode and 39/39 Play Mode**, followed by **24/24 production-scene simulation checks**. The Game Over heading was corrected to `GAME OVER`. See [the final report](Submission/Report.md) and [sanitized evidence](Submission/Verification.json) for current results, Windows build details, screenshots, and pending Windows manual acceptance. The sections below are historical and do not supersede that final record.
+
 Implementation date: 2026-10-15 (user's Asia/Tehran date). Editor: **6000.6.3f1 (45d8eee7de74)**. Dependencies and render pipeline are unchanged. The production scene/Inspector/art setup belongs to the user, as requested. Source coverage and passing disposable tests do not mean the final game scene is configured or visually accepted.
 
 ## Homework mapping

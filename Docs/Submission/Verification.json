@@ -1,0 +1,790 @@
+{
+  "date": "2026-10-27",
+  "editor": "6000.6.3f1 (45d8eee7de74)",
+  "cli": "1.0.0-beta.14",
+  "target": "Windows x86_64 / Mono",
+  "automatedTests": {
+    "editmode": {
+      "status": "completed",
+      "summary": {
+        "total": 32,
+        "passed": 32,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "duration": 0.77,
+      "cases": [
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.InternalCoinCadenceIsIndependentOfHazardGapAndDashSpeed",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.InvalidPatternSettingsAreSanitized",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.LayoutCountsAndFullWidthsIncludeEveryCoin(Single,1)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.LayoutCountsAndFullWidthsIncludeEveryCoin(Row,3)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.LayoutCountsAndFullWidthsIncludeEveryCoin(Arc,3)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.LayoutCountsAndFullWidthsIncludeEveryCoin(RepeatedJumps,3)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.RepeatedJumpGapAllowsFlightAndGroundedRepressAtBothNormalStagesWithoutLongWait(6.0f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.RepeatedJumpGapAllowsFlightAndGroundedRepressAtBothNormalStagesWithoutLongWait(7.5f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.ShallowArcFitsOneDiscreteJumpAcrossBothNormalStages(6.0f,6.0f,6.0f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.ShallowArcFitsOneDiscreteJumpAcrossBothNormalStages(7.5f,7.5f,7.5f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.ShallowArcFitsOneDiscreteJumpAcrossBothNormalStages(6.0f,7.5f,7.5f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.ShallowArcFitsOneDiscreteJumpAcrossBothNormalStages(6.0f,6.0f,7.5f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.ShallowArcFitsOneDiscreteJumpAcrossBothNormalStages(7.5f,6.0f,6.0f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.SingleRetainsAnchorAndRowIsDistinctAtStandingColliderCenter",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternTests.WeightedSelectionIsSeededAndZeroWeightsDisablePatterns",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.DefaultsUseFiftyPointCoinsAndHardestStageDashMaximum",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.DifficultyValidationRequiresPositiveThresholdAndFiniteNonSlowingMultiplier(0.5f,1.0f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.DifficultyValidationRequiresPositiveThresholdAndFiniteNonSlowingMultiplier(float.NaN,1.25f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.DifficultyValidationRequiresPositiveThresholdAndFiniteNonSlowingMultiplier(float.PositiveInfinity,1.25f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.DifficultyValidationRequiresPositiveThresholdAndFiniteNonSlowingMultiplier(float.NegativeInfinity,1.25f)",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.EligibleHitsReachZeroOnceAndCannotBecomeNegative",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.FractionalDistanceAccumulatesAndCoinAddsExactlyItsPoints",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.GameSceneReferencesSettingsWithFiftyPointCoinsAndConfiguredDifficulty",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.PausedHealthPreservesRemainingRecoveryAndInvulnerability",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.PlayerPrefsStoreHandlesMissingNegativeAndFreshInstance",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.RecordIsDirtyUntilCheckpointAndLowerRunCannotOverwriteIt",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.ReentrantDamageCannotRemoveAnotherLife",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.ResetRestoresThreeLivesAndRetainsRecord",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.ScoreSaturatesAndRejectsInvalidRequests",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.SpacingIncludesMaximumSpeedFlightReactionAndBothWidths",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.GameplayInvariantTests.StoppedScoreRejectsDistanceAndItems",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.ParallaxTests.LargeOvershootAndManyWrapsRetainContinuousCoverageAndResetExactly",
+          "status": "Passed"
+        }
+      ]
+    },
+    "playmode": {
+      "status": "completed",
+      "summary": {
+        "total": 39,
+        "passed": 39,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "duration": 51.18,
+      "cases": [
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.ArcCollectsWithOneGroundedJumpAtSevenPointFive",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.ArcCollectsWithOneGroundedJumpAtSix",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.ArcSurvivesDifficultyCrossingOnFirstCoin",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.EarlyArcSurvivesDifficultyChangeOnApproach",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.EarlyRepeatedSequenceSurvivesDifficultyChangeOnApproach",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.GroundRowCollects150WithoutJump",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.HardestDashDuringArcAllowsLandingAndAvoidingNextGroundHazard",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.HoldingSpaceThroughRepeatedSequenceOnlyJumpsAndCollectsOnce",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.RepeatedCoinsRequireThreeGroundedPressesAtSevenPointFive",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.RepeatedCoinsRequireThreeGroundedPressesAtSix",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.CoinPatternSceneTests.RepeatedCoinsSurviveDifficultyCrossingOnFirstCoin",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.InputRoutingTests.DisablingReaderLeavesUiActionsEnabledAndResubscribesOnce",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.InputRoutingTests.HoldGeneratesOneJumpAndRequiresNewPress",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.InputRoutingTests.HoldingThroughPauseOrRestartCannotLeakGameplay",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.InputRoutingTests.SystemPauseSurvivesGameplayGateAndDoesNotInvokeUiCancel",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.AllPatternCoinsDespawnAndRestartMenuAndDisableClearReservationsAndPendingChoice",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.CapSmallerThanAnEntirePatternSkipsItAndKeepsHazardsRotating",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.CapWaitsForWholePatternAndDoesNotAdvanceOpportunityOrReroll",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.DashChangesFrom12To15WhenScoreReachesThreshold",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.DestroyedPlayerBeforeSessionDisableStillCleansUp",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.DifficultyChangesAt499To500AndDoesNotMultiplyAgain",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.EarlySpawnReactionBoundaryReservesHardestDashSpeed",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.EncountersAndCoinAreConsumedOnceEvenDuringInvulnerability",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.FatalHitFreezesGameplayButAllowsDeathAndRepeatedRestart",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.FiftyPointCoinCrossesThresholdByNextPhysicsStep",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.FullPatternTailReservesHazardManeuverSpaceEvenAfterCoinsDisappearAndCameraChanges",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.HarderDashSharesDistanceWithObstaclesParallaxAndScore",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.MenuAndNewRunResetDifficultyAndKeepHighScore",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.PartialDashIntegratesOnceInBothStagesAndCarriesCooldownOvershoot",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.PatternCollectionCrossesDifficultyOnceWithoutChangingFiftyPointRewards",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.PauseFreezesDistanceTimersPhysicsAndTintThenRestartRestoresRun",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.PauseWinsOverGameplayInSameInputUpdateAndMenuTransitionsAreGuarded",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.SeededResetReplaysCoinChoicesWithoutDroppingHazards",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.SessionDisableAndReenablePreservesFreshRun",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.ShapeSweepCatchesHazardCrossingEntirePlayerInOneStep",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.SpaceJumpsOnceAndDashReturnsToBaseSpeed",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.SpawnCapAndGameOverFreezeExistingKinematicObjects",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.SpawnedRowAwards150OnceAndMissingCoinAwardsNothing",
+          "status": "Passed"
+        },
+        {
+          "name": "ChromeDino.Tests.RunnerIntegrationTests.StoredHighScoreAboveThresholdStartsNormalSpeedRun",
+          "status": "Passed"
+        }
+      ]
+    }
+  },
+  "sceneProbe": {
+    "passed": 24,
+    "checks": [
+      {
+        "name": "Actual scene has three parallax factors",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Main menu and pause are separate",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Three lives and health bar",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Production jump command leaves ground",
+        "pass": true,
+        "evidence": {
+          "velocity": 8.8228
+        }
+      },
+      {
+        "name": "Jump Animator state",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Jump returns to grounded Run",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Production dash command and visible tint",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Dash expires at base speed",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Pause freezes world",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Resume restores Playing",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "499 is base speed",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "500 is one-time speed increase",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "1000 does not multiply again",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Natural encounter updates health bar 2",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Natural encounter updates health bar 1",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Natural encounter updates health bar 0",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Naturally spawned ground hazard damages",
+        "pass": true,
+        "evidence": [
+          {
+            "step": 226,
+            "kind": "GroundObstacle",
+            "lives": 2,
+            "healthBar": 2.0,
+            "animator": "Hit",
+            "color": "RGBA(1.000, 0.300, 0.300, 1.000)"
+          },
+          {
+            "step": 430,
+            "kind": "AerialObstacle",
+            "lives": 1,
+            "healthBar": 1.0,
+            "animator": "Hit",
+            "color": "RGBA(1.000, 0.300, 0.300, 1.000)"
+          },
+          {
+            "step": 851,
+            "kind": "GroundObstacle",
+            "lives": 0,
+            "healthBar": 0.0,
+            "animator": "Death",
+            "color": "RGBA(1.000, 1.000, 1.000, 1.000)"
+          }
+        ]
+      },
+      {
+        "name": "Naturally spawned aerial hazard damages during jump",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Naturally spawned uranium collects",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Visible hit flash on actual sprite",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Natural damage reaches Game Over",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Death Animator state",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Correct Game Over heading",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Live score and record labels",
+        "pass": true,
+        "evidence": null
+      }
+    ],
+    "encounters": [
+      {
+        "step": 226,
+        "kind": "GroundObstacle",
+        "lives": 2,
+        "healthBar": 2.0,
+        "animator": "Hit",
+        "color": "RGBA(1.000, 0.300, 0.300, 1.000)"
+      },
+      {
+        "step": 430,
+        "kind": "AerialObstacle",
+        "lives": 1,
+        "healthBar": 1.0,
+        "animator": "Hit",
+        "color": "RGBA(1.000, 0.300, 0.300, 1.000)"
+      },
+      {
+        "step": 851,
+        "kind": "GroundObstacle",
+        "lives": 0,
+        "healthBar": 0.0,
+        "animator": "Death",
+        "color": "RGBA(1.000, 1.000, 1.000, 1.000)"
+      }
+    ],
+    "method": "Automated Editor simulation using production scene, production command queue, original spawner, original fixed updates, and Physics2D. No direct damage or collectible interaction calls. Keyboard action routing is covered by the separately executed Play Mode tests; this probe calls the player command queue directly.",
+    "screen": {
+      "width": 1280,
+      "height": 720
+    },
+    "frame": 14195
+  },
+  "existingRoadEvidence": {
+    "passed": 28,
+    "checks": [
+      {
+        "name": "Road is a visual-only full-speed layer",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Normal speed shared distance",
+        "pass": true,
+        "evidence": {
+          "expected": 0.119999953,
+          "roadMovement": 0.120000839,
+          "worldStep": 0.119999953,
+          "speed": 6.0
+        }
+      },
+      {
+        "name": "499 points retains base speed",
+        "pass": true,
+        "evidence": {
+          "expected": 0.119999953,
+          "roadMovement": 0.120000839,
+          "worldStep": 0.119999953,
+          "speed": 6.0
+        }
+      },
+      {
+        "name": "500 points increases road speed",
+        "pass": true,
+        "evidence": {
+          "expected": 0.149999946,
+          "roadMovement": 0.149999619,
+          "worldStep": 0.149999946,
+          "speed": 7.5
+        }
+      },
+      {
+        "name": "Normal dash shared distance",
+        "pass": true,
+        "evidence": {
+          "expected": 0.2399999,
+          "roadMovement": 0.239999771,
+          "worldStep": 0.2399999,
+          "speed": 12.0
+        }
+      },
+      {
+        "name": "Dash crossing 500 uses harder speed",
+        "pass": true,
+        "evidence": {
+          "expected": 0.2999999,
+          "roadMovement": 0.299999237,
+          "worldStep": 0.2999999,
+          "speed": 15.0
+        }
+      },
+      {
+        "name": "Partial dash shared distance stage 0",
+        "pass": true,
+        "evidence": {
+          "expected": 0.149999946,
+          "roadMovement": 0.149999619,
+          "worldStep": 0.149999917,
+          "speed": 7.499999
+        }
+      },
+      {
+        "name": "Partial dash expires stage 0",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Partial dash shared distance stage 1",
+        "pass": true,
+        "evidence": {
+          "expected": 0.18749994,
+          "roadMovement": 0.1875,
+          "worldStep": 0.187499911,
+          "speed": 9.374999
+        }
+      },
+      {
+        "name": "Partial dash expires stage 1",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "2000 overshoot/wrap steps have continuous coverage at 16:9 and 4:3",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Restart restores exact road positions",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Pause freezes road and distance",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Resume restores road movement",
+        "pass": true,
+        "evidence": {
+          "expected": 0.119999953,
+          "roadMovement": 0.120000839,
+          "worldStep": 0.119999953,
+          "speed": 6.0
+        }
+      },
+      {
+        "name": "Uranium sweep awards exactly 50 once",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Hazard sweep removes one life once",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Factory retains all new visuals cycle 0",
+        "pass": true,
+        "evidence": {
+          "active": 5,
+          "pooling": "Instantiate/Despawn/Destroy; no pool exists"
+        }
+      },
+      {
+        "name": "Despawn clears active objects cycle 0",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Factory retains all new visuals cycle 1",
+        "pass": true,
+        "evidence": {
+          "active": 5,
+          "pooling": "Instantiate/Despawn/Destroy; no pool exists"
+        }
+      },
+      {
+        "name": "Despawn clears active objects cycle 1",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Death sorting is 1 cycle 0",
+        "pass": true,
+        "evidence": {
+          "sorting": 1,
+          "state": "GameOver"
+        }
+      },
+      {
+        "name": "Game over freezes road cycle 0",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Restart restores sorting, lives, score, road cycle 0",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Death sorting is 1 cycle 1",
+        "pass": true,
+        "evidence": {
+          "sorting": 1,
+          "state": "GameOver"
+        }
+      },
+      {
+        "name": "Game over freezes road cycle 1",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Restart restores sorting, lives, score, road cycle 1",
+        "pass": true,
+        "evidence": null
+      },
+      {
+        "name": "Player remains grounded on original surface",
+        "pass": true,
+        "evidence": {
+          "playerBottom": -2.49501514,
+          "floorTop": -2.5
+        }
+      },
+      {
+        "name": "Physical floor transform and collider are unchanged",
+        "pass": true,
+        "evidence": null
+      }
+    ],
+    "frame": 208,
+    "actualScene": "Assets/Scenes/Game.unity"
+  },
+  "screenshots": {
+    "main-menu-16x9.png": {
+      "width": 1280,
+      "height": 720,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "gameover-16x9.png": {
+      "width": 1280,
+      "height": 720,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "gameplay-16x9.png": {
+      "width": 1280,
+      "height": 720,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "gameplay-4x3.png": {
+      "width": 960,
+      "height": 720,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "main-menu-800x450.png": {
+      "width": 800,
+      "height": 450,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "gameplay-800x450.png": {
+      "width": 800,
+      "height": 450,
+      "source": "Unity Editor Game view (overlay UI included)"
+    },
+    "pause-800x450.png": {
+      "width": 800,
+      "height": 450,
+      "source": "Unity Editor Game view (overlay UI included)"
+    }
+  },
+  "spriteAITokensSpentDuringSubmissionPreparation": 0,
+  "standaloneTests": {
+    "status": "not run",
+    "reason": "Linux host, Windows target, no Wine/Windows runtime installed"
+  },
+  "manualPlaytest": {
+    "status": "pending student review",
+    "note": "Screenshots visually inspected by Codex; no human gameplay acceptance is claimed."
+  },
+  "preservation": {
+    "filesChangedSincePreparationStarted": [
+      "Assets/Scenes/Game.unity (Game Over heading only)",
+      "ProjectSettings/EditorBuildSettings.asset (Game startup scene)",
+      "ProjectSettings/ProjectSettings.asset (explicit existing Mono backend)"
+    ],
+    "editorAndPackageVersionsUnchanged": true,
+    "initialArtworkAnimationsPrefabsPhysicsGameplayScriptsSettingsRetained": true,
+    "generatedFontCacheRestored": true,
+    "configurationBackups": "outside repository / submission staging",
+    "verifiedChangedInitialFiles": [
+      "Assets/Scenes/Game.unity",
+      "ProjectSettings/EditorBuildSettings.asset",
+      "ProjectSettings/ProjectSettings.asset"
+    ]
+  },
+  "build": {
+    "result": "Succeeded",
+    "platform": "StandaloneWindows64",
+    "totalSize": 112256607,
+    "totalTimeSeconds": 63.699028999999996,
+    "totalErrors": 0,
+    "totalWarnings": 1,
+    "scenes": [
+      "Assets/Scenes/Game.unity"
+    ],
+    "backend": "Mono2x",
+    "development": false,
+    "scriptDebugging": false,
+    "method": "Official Unity CLI, isolated copy of staged project; original live attempt cancelled after prolonged import, isolated first run reached shader compilation but timed out, warm-cache retry succeeded.",
+    "warning": "Bundled TextMeshPro/Mobile/Distance Field shader uses deprecated enable_d3d11_debug_symbols pragma; no package or shader changes were made.",
+    "files": {
+      "fileCount": 205,
+      "totalBytes": 112256607,
+      "releaseExecutablePE64": true,
+      "requiredRuntimeFilesPresent": true,
+      "gameTestAssembliesExcluded": true,
+      "pipelineCommandRuntimeExcluded": true
+    }
+  }
+}

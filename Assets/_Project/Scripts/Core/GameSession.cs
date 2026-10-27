@@ -169,9 +169,11 @@ namespace ChromeDino
         private void StopRun()
         {
             _input.SetGameplayEnabled(false);
-            _player.StopRun();
+            // Scene teardown can destroy the player before this session.
+            // Unity's null check also detects a destroyed native object.
+            if (_player != null) _player.StopRun();
             _spawner.StopMotion();
-            _player.Health.SetDamageEnabled(false);
+            if (_player != null) _player.Health.SetDamageEnabled(false);
             _score.SetScoringEnabled(false);
             _world.SetRunning(false);
             Time.timeScale = 1f;
@@ -230,12 +232,12 @@ namespace ChromeDino
         {
             if (_ready)
             {
-                _player.Health.Died -= EndRun;
+                if (_player != null) _player.Health.Died -= EndRun;
                 StopRun();
                 _world.ResetRun();
                 _spawner.Clear();
-                _feedback.ResetVisuals();
-                _animation.SetVisibleAnimationEnabled(false);
+                if (_feedback != null) _feedback.ResetVisuals();
+                if (_animation != null) _animation.SetVisibleAnimationEnabled(false);
                 SetState(GameState.MainMenu);
             }
 

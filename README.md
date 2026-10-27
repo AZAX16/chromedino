@@ -13,15 +13,15 @@ cd chromedino
 
 Add the cloned folder in Unity Hub and open it with **6000.6.3f1**. Let Unity resolve the committed `Packages/manifest.json` and `Packages/packages-lock.json` and import the assets. Open **`Assets/Scenes/Game.unity`** to continue working on the current game. Unity regenerates `Library`, IDE project files, and other ignored local caches.
 
-Run both Edit Mode and Play Mode suites in **Window > General > Test Runner**. See [Docs/GitHubVerification.md](Docs/GitHubVerification.md) for the verification performed before the initial push. The existing build-scene list still points to `SampleScene.unity`; select `Game.unity` first when preparing a standalone build.
+Run both Edit Mode and Play Mode suites in **Window > General > Test Runner**. The enabled startup scene is **Game.unity**. See [Docs/Submission/Report.md](Docs/Submission/Report.md) and [final verification evidence](Docs/Submission/Verification.json) for the homework build, requirement coverage, and remaining Windows acceptance checks. Older documents retain historical verification notes.
 
 ## Running
 
 1. Open with the exact recorded Editor and let Unity resolve existing packages/import assets.
-2. Follow UnitySetup, starting with the RunnerSettings asset, Player/ground, and GameSystems references. Wire button On Click events manually to GameSession; code never adds duplicate button listeners.
-3. Configure RunnerControls and the one InputSystemUIInputModule. Space jumps, Shift dashes, Escape pauses/resumes; arrows/Enter navigate menus.
-4. Run the Unity Test Runner suites, then validate actual art, animations, menus, layout, spawn fairness, and persistence in the configured scene.
-5. Make Game.unity the first enabled scene in Build Profiles. Build and reopen a standalone player to verify persistent high score.
+2. Open the configured **Assets/Scenes/Game.unity** and enter Play mode. Its button callbacks, input references, health bar, Animator, and prefabs are already assigned.
+3. Space jumps, Shift dashes, Escape pauses/resumes; arrows/Enter navigate menus. The game and UI exclusively use the New Input System.
+4. Uranium awards 50 points. Single, row, arc, and repeated-jump patterns remain active. At 500 current-run points, normal speed changes once from 6 to 7.5; dash changes from 12 to 15. Restart resets difficulty.
+5. For the homework release, build **Windows x86_64, Mono**, with Development Build and script debugging disabled. Keep the entire output directory. Run the Windows checklist in the report, including a full close/relaunch persistence check.
 
 ## Code structure and gameplay flow
 
@@ -33,11 +33,12 @@ ScoreTracker combines floored accumulated distance points with item points, satu
 
 ## Dependencies
 
-These exact direct dependencies are preserved from Packages/manifest.json. There are no added packages, standalone .NET solutions, downloaded DLLs, or fabricated lockfile entries. UPM owns resolution. Test assemblies reference the installed Unity.InputSystem.TestFramework helper; TMP is included in uGUI.
+The existing Editor and package versions were preserved during submission preparation. Packages/manifest.json and packages-lock.json are authoritative; UPM owns resolution. The official Pipeline package provides live CLI automation. Test assemblies reference the installed Unity.InputSystem.TestFramework helper; TMP is included in uGUI.
 
 | Dependency | Version | Purpose / setup |
 | --- | --- | --- |
 | Unity Editor | 6000.6.3f1 | Use this installed Editor; no migration. |
+| com.unity.pipeline | 0.9.1-exp.1 | Official live Editor CLI integration; existing version retained. |
 | com.unity.2d.animation | 16.0.1 | Existing 2D toolchain; preserved. |
 | com.unity.2d.aseprite | 6.0.0 | Existing 2D toolchain; preserved. |
 | com.unity.2d.psdimporter | 15.0.1 | Existing 2D toolchain; preserved. |
@@ -95,13 +96,13 @@ These exact direct dependencies are preserved from Packages/manifest.json. There
 
 ## Validation and remaining work
 
-See Docs/RequirementCoverage.md for exact commands, results, and limitations. Automated fixtures exercise source invariants and disposable integration objects; they cannot establish production scene/art quality. No runnable production build or final UI/Inspector configuration is claimed. Existing scene YAML and package manifest/lockfile remain unchanged.
+Final submission checks passed **32 Edit Mode tests, 39 Play Mode tests, and 24 actual-scene simulation checks**. The latter use the production spawner and physics to exercise hazards, pickups, health, feedback, animation, and death. Keyboard action routing is tested separately by the Play Mode suites. Screenshots were visually reviewed at 1280x720, 960x720, and 800x450. These are automated Editor checks and visual inspection, not a claim of human playtesting or Windows standalone acceptance.
 
-The project is tracked on the `main` branch of [AZAX16/chromedino](https://github.com/AZAX16/chromedino). The supplied .gitignore baseline is copied verbatim from the spec, with an additional *.slnx rule for Unity 6 generated solutions. Unity-generated `.meta` files are tracked; Library, Temp, Logs, and builds are ignored. Existing ZIP archives and the pre-artwork checkpoint are retained alongside the current project files.
+The project is tracked on the `main` branch of [AZAX16/chromedino](https://github.com/AZAX16/chromedino). The assignment ZIP's actual .gitignore is retained verbatim, with additional exclusions for local archives, checkpoints, authoring artifacts, IDE state, and credentials. Old ZIP/checkpoint files were removed from tracking and retained locally. Required runtime artwork and all Unity `.meta` files are included under Assets. Submission staging, full builds, and archives live outside this repository.
 
 ## Assistance, sources, and submission
 
-Implementation was assisted by OpenAI Codex. The student must review, understand, and take responsibility for the submitted code, identify any human collaborators themselves, and complete the course's required report/screenshots/repository/build ZIP. No student identity or repository URL has been invented. The spec states 26 Mehr 1405 as the deadline and GD_Hw1_[firstName]_[lastName]_[StudentId].zip as the submission filename.
+Student: **Alireza Pooyan, 400414039**. Implementation, verification, report drafting, and submission preparation received **OpenAI Codex/ChatGPT** assistance. Existing dinosaur artwork and animations include **Sprite AI** generation; imported landscape/prop artwork was supplied by the student and integrated with local image processing. No Sprite AI tokens were spent during submission preparation. No human collaborator is claimed. Review the report and code before uploading. The PDF states 26 Mehr 1405 as the deadline; no extension is assumed.
 
 Technical references used:
 
@@ -109,4 +110,5 @@ Technical references used:
 - [Unity 6.6 Collider2D.Cast](https://docs.unity3d.com/6000.6/Documentation/ScriptReference/Collider2D.Cast.html): shape sweeps supplement trigger callbacks.
 - Installed com.unity.inputsystem 1.20.1 source: InputAction, InputSystemUIInputModule, and Tests/TestFixture/InputTestFixture.cs. The test helper explicitly supports Play Mode, where the input tests live.
 - Installed uGUI assembly definitions: UnityEngine.UI and Unity.TextMeshPro; installed Test Framework 1.8.0 runner.
-- The supplied Docs/Chrome_Dino_CSharp_Codex_Spec.md, including Appendix A's .gitignore. The referenced homework PDF was not present in this workspace; the supplied spec was used independently as requested.
+- The supplied HM1.pdf and .gitignore, read from HM1 (2).zip during final submission preparation; the earlier implementation specification remains in Docs.
+- [OpenAI Codex/ChatGPT](https://openai.com/codex/) and [Sprite AI](https://www.sprite-ai.art/): actual AI assistance and existing generated character assets. Additional source details and limitations appear in the report.
